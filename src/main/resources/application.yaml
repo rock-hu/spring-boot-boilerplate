@@ -1,2 +1,25 @@
 ---
-"spring.application.name=spring-boot-boilerplate"
+spring:
+  application:
+    name: "spring-boot-boilerplate"
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+        exclude: "env,shutdown"
+  endpoint:
+    beans:
+      cache:
+        time-to-live: "10s"
+    sbom:
+      additional:
+        system:
+          location: "optional:file:/system.spdx.json"
+          media-type: "application/spdx+json"
+  tracing:
+    sampling:
+      probability: 1.0
+  info:
+    git:
+      mode: "full"

@@ -1,0 +1,116 @@
+{
+    "_links": {
+        "beans": {
+            "href": "http://localhost:8080/actuator/beans",
+            "templated": false
+        },
+        "caches": {
+            "href": "http://localhost:8080/actuator/caches",
+            "templated": false
+        },
+        "caches-cache": {
+            "href": "http://localhost:8080/actuator/caches/{cache}",
+            "templated": true
+        },
+        "conditions": {
+            "href": "http://localhost:8080/actuator/conditions",
+            "templated": false
+        },
+        "configprops": {
+            "href": "http://localhost:8080/actuator/configprops",
+            "templated": false
+        },
+        "configprops-prefix": {
+            "href": "http://localhost:8080/actuator/configprops/{prefix}",
+            "templated": true
+        },
+        "health": {
+            "href": "http://localhost:8080/actuator/health",
+            "templated": false
+        },
+        "health-path": {
+            "href": "http://localhost:8080/actuator/health/{*path}",
+            "templated": true
+        },
+        "heapdump": {
+            "href": "http://localhost:8080/actuator/heapdump",
+            "templated": false
+        },
+        "info": {
+            "href": "http://localhost:8080/actuator/info",
+            "templated": false
+        },
+        "integrationgraph": {
+            "href": "http://localhost:8080/actuator/integrationgraph",
+            "templated": false
+        },
+        "loggers": {
+            "href": "http://localhost:8080/actuator/loggers",
+            "templated": false
+        },
+        "loggers-name": {
+            "href": "http://localhost:8080/actuator/loggers/{name}",
+            "templated": true
+        },
+        "mappings": {
+            "href": "http://localhost:8080/actuator/mappings",
+            "templated": false
+        },
+        "metrics": {
+            "href": "http://localhost:8080/actuator/metrics",
+            "templated": false
+        },
+        "metrics-requiredMetricName": {
+            "href": "http://localhost:8080/actuator/metrics/{requiredMetricName}",
+            "templated": true
+        },
+        "prometheus": {
+            "href": "http://localhost:8080/actuator/prometheus",
+            "templated": false
+        },
+        "quartz": {
+            "href": "http://localhost:8080/actuator/quartz",
+            "templated": false
+        },
+        "quartz-jobsOrTriggers": {
+            "href": "http://localhost:8080/actuator/quartz/{jobsOrTriggers}",
+            "templated": true
+        },
+        "quartz-jobsOrTriggers-group": {
+            "href": "http://localhost:8080/actuator/quartz/{jobsOrTriggers}/{group}",
+            "templated": true
+        },
+        "quartz-jobsOrTriggers-group-name": {
+            "href": "http://localhost:8080/actuator/quartz/{jobsOrTriggers}/{group}/{name}",
+            "templated": true
+        },
+        "sbom": {
+            "href": "http://localhost:8080/actuator/sbom",
+            "templated": false
+        },
+        "sbom-id": {
+            "href": "http://localhost:8080/actuator/sbom/{id}",
+            "templated": true
+        },
+        "scheduledtasks": {
+            "href": "http://localhost:8080/actuator/scheduledtasks",
+            "templated": false
+        },
+        "self": {
+            "href": "http://localhost:8080/actuator",
+            "templated": false
+        },
+        "sessions": {
+            "href": "http://localhost:8080/actuator/sessions",
+            "templated": false
+        },
+        "sessions-sessionId": {
+            "href": "http://localhost:8080/actuator/sessions/{sessionId}",
+            "templated": true
+        },
+        "threaddump": {
+            "href": "http://localhost:8080/actuator/threaddump",
+            "templated": false
+        }
+    }
+}
