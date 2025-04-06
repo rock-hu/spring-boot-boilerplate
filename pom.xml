@@ -36,7 +36,6 @@
 
 
 	<dependencies>
-
 		<dependency>
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-core</artifactId>
@@ -53,7 +52,6 @@
 			<groupId>org.springframework.batch</groupId>
 			<artifactId>spring-batch-test</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
@@ -148,33 +146,26 @@
 			<groupId>org.springframework.retry</groupId>
 			<artifactId>spring-retry</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
 			<artifactId>spring-ws-core</artifactId>
-
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
 			<artifactId>spring-ws-security</artifactId>
-
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
 			<artifactId>spring-ws-support</artifactId>
-
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
 			<artifactId>spring-ws-test</artifactId>
-
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.ws</groupId>
 			<artifactId>spring-xml</artifactId>
-
 		</dependency>
-
 		<dependency>
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-classic</artifactId>
@@ -183,7 +174,6 @@
 			<groupId>ch.qos.logback</groupId>
 			<artifactId>logback-core</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -331,7 +321,7 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-project-info-reports-plugin</artifactId>
-					<version>2.6</version>
+					<version>3.9.0</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -403,77 +393,48 @@
 							</indent>
 						</format>
 					</formats>
-
 					<sortPom>
-						<encoding>UTF-8</encoding> <!-- The encoding of the pom
-						files -->
-						<lineSeparator>${line.separator}</lineSeparator> <!--
-						line separator to use -->
-						<expandEmptyElements>true</expandEmptyElements> <!--
-						Should empty elements be expanded -->
-						<spaceBeforeCloseEmptyElement>false</spaceBeforeCloseEmptyElement> <!--
-						Should a space be added inside self-closing elements -->
-						<keepBlankLines>true</keepBlankLines> <!-- Keep empty
-						lines -->
-						<endWithNewline>true</endWithNewline> <!-- Whether sorted
-						pom ends with a newline -->
-						<nrOfIndentSpace>2</nrOfIndentSpace> <!-- Indentation -->
-						<indentBlankLines>false</indentBlankLines> <!-- Should
-						empty lines be indented -->
-						<indentSchemaLocation>false</indentSchemaLocation> <!--
-						Should schema locations be indented -->
-						<indentAttribute></indentAttribute> <!-- Should the xml
-						attributes be indented -->
-						<predefinedSortOrder>recommended_2008_06</predefinedSortOrder> <!--
-						Sort order of elements:
-						https://github.com/Ekryd/sortpom/wiki/PredefinedSortOrderProfiles -->
-						<sortOrderFile></sortOrderFile> <!-- Custom sort order of
-						elements:
-						https://raw.githubusercontent.com/Ekryd/sortpom/master/sorter/src/main/resources/custom_1.xml -->
-						<sortDependencies></sortDependencies> <!-- Sort
-						dependencies:
-						https://github.com/Ekryd/sortpom/wiki/SortDependencies -->
-						<sortDependencyManagement></sortDependencyManagement> <!--
-						Sort dependency management:
-						https://github.com/Ekryd/sortpom/wiki/SortDependencies -->
-						<sortDependencyExclusions></sortDependencyExclusions> <!--
-						Sort dependency exclusions:
-						https://github.com/Ekryd/sortpom/wiki/SortDependencies -->
-						<sortPlugins></sortPlugins> <!-- Sort plugins:
-						https://github.com/Ekryd/sortpom/wiki/SortPlugins -->
-						<sortProperties>false</sortProperties> <!-- Sort
-						properties -->
-						<sortModules>false</sortModules> <!-- Sort modules -->
-						<sortExecutions>false</sortExecutions> <!-- Sort plugin
-						executions -->
+						<encoding>UTF-8</encoding>
+						<lineSeparator>${line.separator}</lineSeparator>
+						<expandEmptyElements>true</expandEmptyElements>
+						<spaceBeforeCloseEmptyElement>false</spaceBeforeCloseEmptyElement> 
+						<keepBlankLines>true</keepBlankLines> 
+						<endWithNewline>true</endWithNewline> 
+						<nrOfIndentSpace>2</nrOfIndentSpace> 
+						<indentBlankLines>false</indentBlankLines> 
+						<indentSchemaLocation>false</indentSchemaLocation>
+						<indentAttribute>true</indentAttribute>
+						<predefinedSortOrder>recommended_2008_06</predefinedSortOrder>
+						<sortDependencies>true</sortDependencies>
+						<sortDependencyManagement>true</sortDependencyManagement>
+						<sortDependencyExclusions>true</sortDependencyExclusions>
+						<sortPlugins>true</sortPlugins>
+						<sortProperties>true</sortProperties>
+						<sortModules>false</sortModules>
+						<sortExecutions>true</sortExecutions>
 					</sortPom>
 					<markdown>
-						<includes> <!-- You have to set the target manually -->
+						<includes>
 							<include>**/*.md</include>
 						</includes>
-						<flexmark /> <!-- has its own section below -->
+						<flexmark />
 					</markdown>
 					<yaml>
-						<includes>     <!-- You have to set the target manually -->
+						<includes>
 							<include>src/**/*.yaml</include>
 						</includes>
-						<jackson />    <!-- has its own section below -->
-						<prettier />   <!-- has its own section below -->
+						<jackson />
+						<prettier />
 					</yaml>
 					<json>
-						<includes>    <!-- You have to set the target manually -->
+						<includes>
 							<include>docs/actuator/*.json</include>
 						</includes>
-
 						<gson>
-							<indentSpaces>4</indentSpaces>        <!-- optional: specify
-							the number of spaces to use -->
-							<sortByKeys>true</sortByKeys>        <!-- optional: sort
-							JSON by its keys -->
-							<version>2.8.1</version>              <!-- optional: specify
-							version -->
+							<indentSpaces>4</indentSpaces>
+							<sortByKeys>true</sortByKeys>
+							<version>2.8.1</version>
 						</gson>
-
 					</json>
 				</configuration>
 			</plugin>
@@ -508,6 +469,14 @@
 					<reportSet>
 						<reports>
 							<report>index</report>
+							<report>dependencies</report>
+							<report>dependency-info</report>
+							<report>dependency-convergence</report>
+							<report>dependency-management</report>
+							<report>licenses</report>
+							<report>plugin-management</report>
+							<report>plugins</report>
+							<report>summary</report>
 						</reports>
 					</reportSet>
 				</reportSets>
@@ -519,13 +488,11 @@
 				<reportSets>
 					<reportSet>
 						<reports>
-
 							<report>aggregate</report>
 						</reports>
 					</reportSet>
 				</reportSets>
 			</plugin>
-
 		</plugins>
 	</reporting>
 </project>
