@@ -13,6 +13,8 @@
 
 ### 3.4.4   
 
+[dependencies](./3.4.4/dependencies.md)    
+
 |report|link|
 |---|---|
 |dependency-analyze-dep-mgt|[dependency-analyze-dep-mgt](./3.4.4/dependency-analyze-dep-mgt.md)
@@ -24,6 +26,7 @@
 
 ### 2.7.18  
 
+[dependencies](./2.7.18/dependencies.md)    
 
 |report|link|
 |---|---|
